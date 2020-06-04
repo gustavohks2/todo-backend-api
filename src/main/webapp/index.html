@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>todo-backend</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+		<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+			border: none;
+			box-sizing: border-box;
+		}
+		
+		html {
+			width: 100vw;
+			height: 100vh;
+		}
+		
+		body {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			background-color: #FFC4A3;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.version-info {
+			background-color: white;
+			width: 400px;
+			height: 300px;
+			display: flex;
+			flex-direction: column;
+			letter-spacing: 2px;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Roboto Condensed', sans-serif;
+			border-radius: 5px;
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+		}
+		
+		.icon-author {
+			position: absolute;
+			bottom: 10px;
+			color: white;
+		}
+		
+		.icon-author a {
+			text-decoration: underline;
+			color: #F96D80;
+		}
+		
+		.icon-chair {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 10px;
+		}
+		
+		b {
+			color: #444;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="version-info">
+			<img class="icon-chair" src="img/chair.svg"/>
+			<p>[ todo-backend version <b>1.0.0-SNAPSHOT</b> ]</p>
+		</div>
+		<footer class="icon-author">
+			Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+		</footer>
+	</body>
+</html>
