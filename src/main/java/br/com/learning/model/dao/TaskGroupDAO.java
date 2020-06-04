@@ -1,8 +1,8 @@
-package br.com.learning.dao;
+package br.com.learning.model.dao;
 
 import java.util.List;
 
-import br.com.learning.entity.TaskGroup;
+import br.com.learning.model.entity.TaskGroup;
 
 public class TaskGroupDAO extends BaseDAO {
 

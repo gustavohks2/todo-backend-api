@@ -1,4 +1,4 @@
-package br.com.learning.dto;
+package br.com.learning.model.dto;
 
 import java.time.LocalDateTime;
 

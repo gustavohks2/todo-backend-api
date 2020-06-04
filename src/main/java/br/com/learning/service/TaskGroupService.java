@@ -5,8 +5,8 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import br.com.learning.dao.TaskGroupDAO;
-import br.com.learning.entity.TaskGroup;
+import br.com.learning.model.dao.TaskGroupDAO;
+import br.com.learning.model.entity.TaskGroup;
 
 @Stateless
 public class TaskGroupService {

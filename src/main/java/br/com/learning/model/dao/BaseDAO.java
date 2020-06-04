@@ -1,4 +1,4 @@
-package br.com.learning.dao;
+package br.com.learning.model.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

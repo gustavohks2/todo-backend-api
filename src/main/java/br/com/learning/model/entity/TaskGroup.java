@@ -1,4 +1,4 @@
-package br.com.learning.entity;
+package br.com.learning.model.entity;
 
 import java.time.LocalDateTime;
 import java.util.List;
