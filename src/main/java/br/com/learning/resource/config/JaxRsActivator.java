@@ -1,4 +1,4 @@
-package br.com.learning.resource;
+package br.com.learning.resource.config;
 
 /**
  * Use this if JAX-RS was not activated via web.xml

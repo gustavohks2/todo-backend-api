@@ -22,6 +22,12 @@ public class TaskGroupResource {
 		return Response.ok(this.taskGroupService.getAllActiveTaskGroups()).build();
 	}
 	
+	@GET
+	@Path("{id}/tasks")
+	public Response getTasksFromTaskGroup() {
+		return Response.ok(this.taskGroupService.getAllActiveTaskGroups()).build();
+	}
+	
 	@Inject
 	public void setTaskGroupService(TaskGroupService taskGroupService) {
 		this.taskGroupService = taskGroupService;

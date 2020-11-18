@@ -1,42 +1,21 @@
-package br.com.learning.model.entity;
+package br.com.learning.model.dto;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import br.com.learning.model.entity.Task;
 
-/**
- * Group of to-do tasks
- */
-@Entity
-@Table(name = "tb_task_group")
-public class TaskGroup {
+public class TaskGroupDTO {
 
-	@Id
-	@GeneratedValue(generator = "task_group_generator", strategy = GenerationType.SEQUENCE)
-	@SequenceGenerator(name = "task_group_generator", sequenceName = "sq_task_group")
 	private int id;
 
-	@Column
-	private String label; // Name of the group
+	private String label;
 
-	@Column
-	@OneToMany(orphanRemoval = true, mappedBy = "group", fetch = FetchType.LAZY)
 	private List<Task> tasks = new ArrayList<Task>();
-	
-	@Column
+
 	private boolean active;
-	
-	@Column(name = "creation_dt")
+
 	private LocalDateTime creationDateTime;
 
 	public int getId() {

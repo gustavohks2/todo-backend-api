@@ -1,4 +1,4 @@
-package br.com.learning.resource;
+package br.com.learning.resource.config;
 
 import java.io.IOException;
 
