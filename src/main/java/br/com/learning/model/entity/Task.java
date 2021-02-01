@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "tb_task")
@@ -36,7 +37,11 @@ public class Task {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "group_id")
+//	@NotNull
+//	@Column(nullable = true)
 	private TaskGroup group;
+	
+	public Task() {}
 
 	public int getId() {
 		return id;
